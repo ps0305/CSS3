@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <style>
+        body{
+            background-image: url("img/gallery1.jpeg");
+            background-size: cover;
+        }
+        .form-div{
+            border: 2px solid blue;
+            width: 300px;
+            font-family: Arial,sans-serif;
+            margin: 40px 0 0 80px;
+            border-radius: 10px;
+            text-align: center;
+            background-image: url("https://i.pinimg.com/originals/d1/78/6b/d1786bf19e5fe7ed66ee8c3e095522a4.gif");
+
+
+        }
+        .form-div h3{
+            color: white;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+        input[type='text'],input[type='password']{
+            height: 45px;
+            width: 220px;
+            margin: 10px;
+            border-radius: 8px;
+            padding: 4px;
+            text-align: center;
+            font-size: 18px;
+            border:2px solid blue;
+
+
+        }
+       button[type='submit']{
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 25px;
+            padding: 7px 25px;
+            border-radius: 10px;
+            margin: 10px 0 15px 0;
+        }
+        input[type='text']:focus , input[type='password']:focus{
+            outline: none;
+            background-color: lightblue;
+    </style>
+
+</head>
+<body>
+
+<div class="form-div">
+    <form>
+        <h3 class="form-heading">Login In Here</h3>
+        <table>
+            <tr>
+
+                <input type="text" placeholder="User Name">
+            </tr>
+            <br>
+            <tr>
+
+                <input type="password" placeholder="Password">
+            </tr>
+            <tr>
+                <button type="submit">Submit</button>
+            </tr>
+        </table>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            margin: 0;
+        }
+        nav{
+            overflow: hidden;
+            background-color: black;
+        }
+        nav ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        nav ul li{
+            float: left;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 25px;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            background-color: seagreen;
+
+        }
+        .dropdown_list{
+            background-color: #1de9b6;
+            position: absolute;
+            display: none;/*to hide dropdown*/
+        }
+        .dropdown_list a{
+            display: block;
+        }
+        .dropdown_list a:hover{
+            background-color: seagreen;
+            color: white;
+        }
+        .dropdown:hover .dropdown_list{
+            display: block;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">News</a>
+
+                <div class="dropdown_list">
+                <a href="#">
+                    <i class="fa fa-soccer-ball-o"></i>Sports</a>
+                <a href="#">
+                    <i class="fa fa-laptop"></i>Technology</a>
+                <a href="#">
+                    <i class="fa fa-file-picture-o"></i>Arts</a>
+                <a href="#">Others</a>
+            </div>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+            <li class="dropdown">
+                <a href="#">Careers</a>
+                <div class="dropdown_list">
+                    <a href="#">
+                        <i class="fa fa-coffee"></i>JAVA</a>
+                    <a href="#">
+                        <i class="fa fa-code"></i>PHP</a>
+                    <a href="#">
+                        <i class="fa fa-terminal"></i>NODEJS</a>
+                    <a href="#">
+                        <i class="fa fa-file-image-o"></i>UI/UX</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>

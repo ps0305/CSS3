@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DropDown</title>
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .dropdown_button{
+            background-color: #00acc1;
+            color: white;
+            border: none;
+            font-size: 30px;
+            padding: 10px 25px;
+        }
+        .dropdown_list{
+            background-color: salmon;
+            width: 196px;
+            text-align: center;
+            display: none;/* to hide this*/
+            position: absolute;
+
+        }
+        .dropdown_list a{
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown_list a:hover{
+            background-color: lightcoral;
+        }
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+        .dropdown{
+            width: 196px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown_button">Courses
+        <i class="fa fa-arrow-circle-down"></i></button>
+        <div class="dropdown_list">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Angular JS</a>
+        </div>
+    </div>
+</body>
+</html>
