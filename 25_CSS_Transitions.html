@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        div{
+            font-family: "Comic Sans MS", sans-serif;
+            height: 100px;
+            width: 100px;
+            background-color: forestgreen;
+        }
+        #t_width{
+            transition: width 2s;
+        }
+        #t_width:hover{
+            width: 200px;
+        }
+        #t_height{
+            transition: height 2s;
+        }
+        #t_height:hover{
+            height: 200px;
+        }
+        #t_both{
+            transition: all 2s;
+        }
+        #t_both:hover{
+            height: 200px;
+            width: 200px;
+        }
+        #t_rotate{
+            transition: all 2s;
+        }
+        #t_rotate:hover{
+            transform: rotate(180deg);
+            width: 200px;
+        }#t_timimg{
+            margin-bottom: 100px;
+            transition: width 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+                 }
+        #t_timimg:hover{
+            width: 400px;
+        }
+        #zoom{
+            width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        #zoom:hover img{
+            transform: scale(1.2,1.2);
+
+        }
+        #zoom img{
+            max-width:100%;
+            max-height: 100%;
+            transition: all 2s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--transition widths-->
+    <p>transition widths</p>
+    <div id="t_width">
+
+    </div>
+    <!--transition height-->
+    <p>transition height</p>
+    <div id="t_height">
+
+    </div>
+    <!--transition both-->
+    <p>transition both</p>
+    <div id="t_both">
+
+    </div>
+
+    <!--transition rotate-->
+    <p>transition rotate</p>
+    <div id="t_rotate">
+
+    </div>
+
+    <!--transition timimg-->
+    <p>transition timimg</p>
+    <div id="t_timimg">
+
+    </div>
+    <!--Zoom effect-->
+    <p>Zoom effect</p>
+    <div id="zoom">
+        <img src="img/gallery2.jpeg">
+
+    </div>
+</body>
+</html>
